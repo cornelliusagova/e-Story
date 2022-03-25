@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+    color:aqua;
+}
+
+audio{
+    display: block;
+    margin:auto;
+    border:1px outset;
+}
+
+h4{
+    text-align: right;
+}
+
+p{
+    text-align:justify;
+    background-color:aquamarine;
+}
+
+img,table{
+    width: 75%;
+    display: block;
+    margin:auto;
+}
+
+a{
+    color: red;
+}
+
+
+
+.warna1 {
+    background-color:rgb(96, 168, 96);
+}
+
+#warna1 {
+    background-color:brown;
+}
+
+div.rere {
+    color: coral;
+}
+
+.ini {
+    background-color:crimson;
+}

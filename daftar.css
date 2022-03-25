@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    color: aqua;
+}
+
+table{
+    font-family: sans-serif;
+    border: 1px dashed;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    color: red;
+}
+
+td  {
+    border: 1px dashed #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-last-of-type(odd) {
+    background-color: #1ed11e;
+  }

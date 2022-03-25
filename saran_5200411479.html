@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="saran.css">
+    <title>Document</title>
+</head>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var JmlhAnk = document.getElementById("JmlhAnk").value;
+		var mail = document.getElementById("e-mail").value;
+        var hp = document.getElementById("hp").value;
+        var kerja = document.getElementById("kerja").value;
+
+		if (nama != "" && JmlhAnk!="" && mail !="" && hp !="" && kerja !="") {
+			return true;
+		}else{
+			alert('silahkan isi!Nama lengkap:..'+'\n'+'silahkan isi!Status Pernikahan:..'+'\n'+'silahkan isi!Kota Asal:..'+'\n'+'silahkan isi!Jumlah Anak:..'+'\n'+'silahkan isi!Hobi Anak:..'+'\n'+'silahkan isi!Alamat E-mail:..'+'\n'+'silahkan isi!No. Hp:..'+'\n'+'silahkan isi!Pekerjaan:..');
+		}
+	}
+</script>
+<body>
+    <h1>Kotak Saran</h1>
+    <form onSubmit="validasi()" >
+        <table>
+            <tr>
+                <th colspan="2" align="center">Data Wajib</th>
+            </tr>
+
+            <tr>
+                <td width="50%">
+                    <label>Nama lengkap</label>
+                </td>
+                <td>
+                    <label>:</label>
+                    <input type="text" name="nama" id="nama">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Status pernikahan</label>
+                </td>
+                <td>
+                    <label>:</label>
+                    <input type="radio" id="kwn" name="kwn" value="Kawin">Kawin
+                    <input type="radio" id="kwn" name="kwn" value="Belum">Belum Kawin
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Kota Asal</label>
+                </td>
+                <td>
+                    <label>:</label>
+                    <select name="Kota" id="kota">
+                        <option value="0">Pilih Kota</option>
+                        <option value="Bantul">Bantul</option>
+                        <option value="Sleman">Sleman</option>
+                        <option value="Jogja">Jogja</option>
+                        <option value="KP">Kulon progo</option>
+                        <option value="GK">Gunung Kidul</option>
+                    </select>
+                    
+                </td>
+
+                <tr>
+                    <td>
+                        <label>Jumlah Anak</label>
+                    </td>
+                    <td>
+                        <label>:</label>
+                        <input type="number" name="JmlhAnk" id="JmlhAnk" >
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label>Hobi Anak</label>
+                    </td>
+                    <td>
+                        <label>:</label>
+                        <input type="checkbox" id="hobi" name="Hobi[]" value="Bernyanyi">Bernyanyi
+                        <input type="checkbox" id="hobi" name="Hobi[]" value="Dansa">Dansa
+                        <input type="checkbox" id="hobi" name="Hobi[]" value="Sepak Bola">Sepak Bola
+                        <input type="checkbox" id="hobi" name="Hobi[]" value="Silat"> Silat
+                    </td>
+
+                    <tr>
+                        <td>
+                            <label>Upload Foto</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                            <input type="file" name="img">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2" align="center">Data Tambahan</th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Alamat E-mail</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                            <input type="email" name="e-mail" id="e-mail">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>No. Hp</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                            <input type="text" name="no" id="hp">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <label>Pekerjaan</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                            <input type="text" name="Pkerjaan" id="kerja">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2" align="center">Saran Anda</th>
+                    </tr>
+                    
+                    <tr>
+                        <td colspan="2" align="center"><textarea name="saran" ></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="right">
+                            <input type="reset" value="RESET">
+                            <input type="submit" value="SIMPAN">
+                        </td>
+                    </tr>
+
+                </tr>
+            </tr>
+
+        </table>
+
+    </form>
+</body>
+</html>
